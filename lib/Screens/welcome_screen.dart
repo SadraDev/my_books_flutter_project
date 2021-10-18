@@ -47,7 +47,6 @@ class WelcomeScreenUI extends StatefulWidget {
 }
 
 class _WelcomeScreenUIState extends State<WelcomeScreenUI> {
-  bool loading = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +81,7 @@ class _WelcomeScreenUIState extends State<WelcomeScreenUI> {
                           },
                         ),
                         RoundedButton(
-                          loading: loading,
+                          loading: false,
                           icon: FontAwesomeIcons.google,
                           color: Colors.red,
                           title: 'Continue with Google',
@@ -90,8 +89,6 @@ class _WelcomeScreenUIState extends State<WelcomeScreenUI> {
                             final provider =
                                 Provider.of<LogIn>(context, listen: false);
                             provider.googleIn();
-                            loading = !loading;
-                            setState(() {});
                           },
                         ),
                         RoundedButton(
