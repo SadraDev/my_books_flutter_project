@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281459843230",
+    "project_id": "my-books-a55ab",
+    "storage_bucket": "my-books-a55ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281459843230:android:a7ebc4204ee58a40ec9b8f",
+        "android_client_info": {
+          "package_name": "sadra.galavani.com.my_books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281459843230-u85ch13ipv7m2j9scha0t3k1farttvop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE5Ux41sR8ZPMXhBu8eCnT7saomeG_xJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281459843230-u85ch13ipv7m2j9scha0t3k1farttvop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
