@@ -85,6 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                     onPressed: () {
                                       provider.logOut(context);
+                                      Navigator.pop(context);
                                     },
                                     color: Colors.red,
                                   )

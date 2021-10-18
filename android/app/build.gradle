@@ -50,7 +50,7 @@ android {
 
     defaultConfig {
         applicationId "sadra.galavani.com.my_books"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
