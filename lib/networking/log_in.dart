@@ -123,12 +123,9 @@ class LogIn extends ChangeNotifier {
   }
 
   Future logOut(BuildContext context) async {
-    try {
-      googleSignIn.disconnect();
-      _auth.signOut();
-    } catch (e) {
-      print(e);
-    }
+    googleSignIn.disconnect();
+    _auth.signOut();
+
     Navigator.pop(context);
 
     notifyListeners();

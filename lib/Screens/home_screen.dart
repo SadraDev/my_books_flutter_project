@@ -3,6 +3,7 @@ import 'package:appandup_bookshelf/CustomWidgets/book_bubble.dart';
 import 'package:appandup_bookshelf/CustomWidgets/search_bar.dart';
 import 'package:appandup_bookshelf/Screens/favorite_screen.dart';
 import 'package:appandup_bookshelf/Screens/single_detailed_book_screen.dart';
+import 'package:appandup_bookshelf/Screens/welcome_screen.dart';
 import 'package:appandup_bookshelf/constants.dart';
 import 'package:appandup_bookshelf/networking/google_books_api.dart';
 import 'package:appandup_bookshelf/networking/log_in.dart';
@@ -81,11 +82,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                     child: const Text(
                                       "Yes",
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 20),
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                      ),
                                     ),
                                     onPressed: () {
                                       provider.logOut(context);
-                                      Navigator.pop(context);
+                                      Navigator.popAndPushNamed(
+                                        context,
+                                        WelcomeScreen.id,
+                                      );
                                     },
                                     color: Colors.red,
                                   )
